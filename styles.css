@@ -736,7 +736,4 @@ textarea { resize: vertical; min-height: 110px; }
     letter-spacing: .05em;
   }
 
-  .hero h1::after {
-    letter-spacing: .22em;
-  }
 }
