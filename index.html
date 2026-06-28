@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sterling Mechanical – Professional mechanical services. Contact us or request a free quote today." />
+  <title>Sterling Mechanical</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== HEADER / NAV ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#hero" class="logo">
+        <span class="logo-icon">⚙️</span>
+        <span class="logo-text">Sterling <strong>Mechanical</strong></span>
+      </a>
+      <nav class="main-nav" id="main-nav">
+        <a href="#contact">Contact</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#quote" class="btn btn-nav">Get a Quote</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="container hero-content">
+      <p class="hero-eyebrow">Professional &amp; Reliable</p>
+      <h1>Sterling Mechanical</h1>
+      <p class="hero-sub">Quality service you can count on — from a name your neighbours trust.</p>
+      <div class="hero-actions">
+        <a href="#quote" class="btn btn-primary">Request a Free Quote</a>
+        <a href="#contact" class="btn btn-outline">Contact Barry</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section section-light" id="contact">
+    <div class="container">
+      <h2 class="section-title">Get in Touch</h2>
+      <p class="section-sub">Ready to help — just give Barry a call, send a message, or stop by the links below.</p>
+      <div class="contact-grid">
+
+        <a href="tel:+15555550100" class="contact-card">
+          <span class="contact-icon">📞</span>
+          <span class="contact-label">Call Barry</span>
+          <span class="contact-value">(555) 555-0100</span>
+        </a>
+
+        <a href="mailto:barry@sterlingmechanical.com" class="contact-card">
+          <span class="contact-icon">✉️</span>
+          <span class="contact-label">Email</span>
+          <span class="contact-value">barry@sterlingmechanical.com</span>
+        </a>
+
+        <a href="https://sterlingmechanical.com" target="_blank" rel="noopener noreferrer" class="contact-card">
+          <span class="contact-icon">🌐</span>
+          <span class="contact-label">Website</span>
+          <span class="contact-value">sterlingmechanical.com</span>
+        </a>
+
+        <a href="https://www.facebook.com/SterlingMechanical" target="_blank" rel="noopener noreferrer" class="contact-card contact-card--facebook">
+          <span class="contact-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="currentColor" aria-hidden="true"><path d="M22 12c0-5.522-4.478-10-10-10S2 6.478 2 12c0 4.991 3.657 9.128 8.438 9.879V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.989C18.343 21.129 22 16.99 22 12z"/></svg>
+          </span>
+          <span class="contact-label">Facebook</span>
+          <span class="contact-value">Follow us on Facebook</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GOOGLE REVIEWS ===== -->
+  <section class="section section-dark" id="reviews">
+    <div class="container reviews-inner">
+      <div class="reviews-text">
+        <h2 class="section-title light">What Our Customers Say</h2>
+        <p class="section-sub light">Satisfied customers across the region — see what they have to say about Sterling Mechanical on Google.</p>
+        <a
+          href="https://www.google.com/search?q=Sterling+Mechanical+reviews"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-primary reviews-btn"
+        >
+          Read Our Google Reviews ★★★★★
+        </a>
+      </div>
+      <div class="reviews-badges">
+        <div class="badge-card">
+          <p class="badge-stars">★★★★★</p>
+          <p class="badge-quote">"Showed up on time, got the job done right the first time. Barry is the best in the business!"</p>
+          <p class="badge-author">— A Happy Customer</p>
+        </div>
+        <div class="badge-card">
+          <p class="badge-stars">★★★★★</p>
+          <p class="badge-quote">"Fair pricing, honest work. I've used Sterling Mechanical three times now and never been disappointed."</p>
+          <p class="badge-author">— Satisfied Client</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REQUEST A QUOTE ===== -->
+  <section class="section section-light" id="quote">
+    <div class="container">
+      <h2 class="section-title">Request a Free Quote</h2>
+      <p class="section-sub">Fill in the form below and Barry will get back to you as soon as possible. You can also attach photos of the job.</p>
+
+      <form
+        id="quote-form"
+        class="quote-form"
+        action="https://formspree.io/f/YOUR_FORM_ID"
+        method="POST"
+        enctype="multipart/form-data"
+        novalidate
+      >
+        <!-- Honeypot anti-spam -->
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Full Name <span class="required">*</span></label>
+            <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+            <span class="error-msg" id="name-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number <span class="required">*</span></label>
+            <input type="tel" id="phone" name="phone" placeholder="(555) 555-0100" required />
+            <span class="error-msg" id="phone-error"></span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="jane@example.com" />
+          <span class="error-msg" id="email-error"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="address">Service Address</label>
+          <input type="text" id="address" name="address" placeholder="123 Main St, Your Town" />
+        </div>
+
+        <div class="form-group">
+          <label for="job-type">Type of Job <span class="required">*</span></label>
+          <select id="job-type" name="job_type" required>
+            <option value="" disabled selected>Select a service type…</option>
+            <option value="Mechanical Repair">Mechanical Repair</option>
+            <option value="Maintenance">Maintenance</option>
+            <option value="Installation">Installation</option>
+            <option value="Inspection">Inspection</option>
+            <option value="Other">Other</option>
+          </select>
+          <span class="error-msg" id="job-type-error"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="details">Job Details <span class="required">*</span></label>
+          <textarea id="details" name="details" rows="5" placeholder="Describe the work you need done — the more detail the better!" required></textarea>
+          <span class="error-msg" id="details-error"></span>
+        </div>
+
+        <!-- Photo upload -->
+        <div class="form-group">
+          <label for="photos">Attach Photos (optional)</label>
+          <div class="upload-area" id="upload-area">
+            <input
+              type="file"
+              id="photos"
+              name="photos"
+              accept="image/*"
+              multiple
+              class="file-input"
+            />
+            <div class="upload-placeholder" id="upload-placeholder">
+              <span class="upload-icon">📷</span>
+              <p>Drag &amp; drop photos here, or <strong>click to browse</strong></p>
+              <p class="upload-hint">JPG, PNG, HEIC up to 10 MB each</p>
+            </div>
+            <div class="photo-preview" id="photo-preview"></div>
+          </div>
+        </div>
+
+        <div class="form-group form-check">
+          <input type="checkbox" id="consent" name="consent" required />
+          <label for="consent">I agree that Sterling Mechanical may contact me about my quote request. <span class="required">*</span></label>
+          <span class="error-msg" id="consent-error"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">
+          <span id="btn-text">Send My Quote Request</span>
+          <span id="btn-loading" hidden>Sending…</span>
+        </button>
+
+        <div class="form-success" id="form-success" hidden>
+          <span class="success-icon">✅</span>
+          <strong>Thanks! Your request has been sent.</strong>
+          <p>Barry will be in touch with you shortly.</p>
+        </div>
+        <div class="form-error-msg" id="form-error" hidden>
+          <span>⚠️</span>
+          <strong>Something went wrong.</strong> Please try again or call Barry directly.
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon">⚙️</span>
+        <span class="logo-text">Sterling <strong>Mechanical</strong></span>
+      </div>
+      <nav class="footer-nav">
+        <a href="#contact">Contact</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#quote">Get a Quote</a>
+        <a href="https://www.facebook.com/SterlingMechanical" target="_blank" rel="noopener noreferrer">Facebook</a>
+      </nav>
+      <p class="footer-copy">&copy; <span id="year"></span> Sterling Mechanical. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
