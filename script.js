@@ -61,7 +61,7 @@
         removeBtn.textContent = '✕';
         removeBtn.addEventListener('click', (ev) => {
           ev.stopPropagation();
-          selectedFiles.splice(index, 1);
+          selectedFiles = selectedFiles.filter(f => f !== file);
           syncFileInput();
           renderPreviews();
         });
