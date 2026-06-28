@@ -15,6 +15,20 @@ A simple, mobile-friendly single-page website for **Sterling Mechanical** — a 
 
 The site is three plain files: `index.html`, `styles.css`, `script.js`. They can be hosted on any static hosting service (GitHub Pages, Netlify, etc.).
 
+### GitHub Pages production + preview setup
+
+This repository includes two GitHub Actions workflows:
+
+- `.github/workflows/deploy.yml` deploys the live site from `main` to the `gh-pages` branch.
+- `.github/workflows/preview.yml` publishes pull request previews under `pr-preview/pr-<number>/`.
+
+To make previews work, configure the repository settings like this:
+
+1. In **Settings → Pages**, set the source to **Deploy from a branch** and choose the `gh-pages` branch.
+2. In **Settings → Actions → General**, set **Workflow permissions** to **Read and write permissions**.
+
+Preview URLs will be posted back to the pull request automatically after each update.
+
 ### Configuring the Quote Form
 
 The quote form uses [Formspree](https://formspree.io) to handle submissions without a backend.
